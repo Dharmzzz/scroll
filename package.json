@@ -1,0 +1,12 @@
+{
+  "name": "pdf-flipbook-reports",
+  "version": "1.0.0",
+  "description": "Interactive 3D Realistic PDF Flipbook with Vintage Hardcover, High-DPI canvas rendering, zoom & pan, and multi-report dropdown.",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": ["flipbook", "pdf", "pdfjs", "pageflip", "3d-book", "annual-report"],
+  "author": "Dharmzzz",
+  "license": "MIT"
+}
