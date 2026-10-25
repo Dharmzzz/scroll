@@ -218,7 +218,9 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
 
+    // Ensure all background image layers start strictly hidden at time 0 of Era 1
     if (bgLines) {
+      drawTl.set(bgLines, { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0 }, 0);
       drawTl.fromTo(
         bgLines,
         { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0 },
@@ -227,6 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
       );
     }
     if (bgShading) {
+      drawTl.set(bgShading, { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0 }, 0);
       drawTl.fromTo(
         bgShading,
         { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0 },
@@ -235,10 +238,18 @@ document.addEventListener('DOMContentLoaded', function () {
       );
     }
     if (bgPhoto) {
+      // Photo MUST strictly stay at opacity 0 while pencil sketches (0.00 -> 0.72)
+      // Only reveals smoothly as the architectural drawing completes (0.72 -> 1.00)
+      drawTl.set(bgPhoto, { opacity: 0 }, 0);
       drawTl.fromTo(
         bgPhoto,
         { opacity: 0 },
-        { opacity: 0.88, duration: 0.25, ease: 'power1.inOut' },
+        { opacity: 0, duration: 0.72, ease: 'none' },
+        0
+      );
+      drawTl.to(
+        bgPhoto,
+        { opacity: 0.88, duration: 0.28, ease: 'power1.inOut' },
         0.72
       );
     }
@@ -267,8 +278,6 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       });
 
-      if (bgPhoto) colorTl.set(bgPhoto, { opacity: 0.88 }, 0);
-
       colorTl.fromTo(
         bgColor,
         { opacity: 1, clipPath: 'inset(0% 0% 100% 0%)' },
@@ -295,9 +304,6 @@ document.addEventListener('DOMContentLoaded', function () {
           scrub: 0.6,
         },
       });
-
-      // Keep color photo visible behind HD wipe so there is never a blank gap
-      if (bgColor) hdTl.set(bgColor, { opacity: 1, clipPath: 'inset(0% 0% 0% 0%)' }, 0);
 
       // High-Definition wipe sweeps across the campus as user enters digital era
       hdTl.fromTo(

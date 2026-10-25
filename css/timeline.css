@@ -1725,12 +1725,14 @@
   z-index: 1;
   mix-blend-mode: multiply;
   opacity: 0;
+  clip-path: inset(0% 0% 100% 0%);
 }
 
 .campus-bg-shading {
   z-index: 2;
   mix-blend-mode: multiply;
   opacity: 0;
+  clip-path: inset(0% 0% 100% 0%);
 }
 
 .campus-bg-photo {
