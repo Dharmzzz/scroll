@@ -2,6 +2,11 @@
 
 > **An immersive, high-performance in-browser 3D Digital Flipbook reader** that renders standard PDF publications into authentic, tactile physical books with **realistic page curl physics**, **aged hardcover bindings**, **gold-embossed typography**, **scorch-marked parchment edges**, **smooth zoom & pan**, and an **instant multi-publication switcher**.
 
+> 💡 **AI Integration Prompts**:
+> - 🐍 [**Django Admin Integration Prompt**](DJANGO_ADMIN_INTEGRATION_PROMPT.md) — Step-by-step instructions to integrate this 3D Flipbook into an existing Django project with full Django Admin panel controls (custom Front Cover & Back Cover image uploads, PDF management, and live previews).
+> - 🌐 [**General Frontend Integration Prompt**](INTEGRATION_PROMPT.md) — Integrate into static HTML, React, or Next.js.
+ that renders standard PDF publications into authentic, tactile physical books with **realistic page curl physics**, **aged hardcover bindings**, **gold-embossed typography**, **scorch-marked parchment edges**, **smooth zoom & pan**, and an **instant multi-publication switcher**.
+
 ---
 
 ## ðŸŒŸ Executive Overview

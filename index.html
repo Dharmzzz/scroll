@@ -1,104 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Annual Reports & Newsletters • Interactive 3D Flipbook</title>
-
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-
-    <!-- Google Fonts for Antique Book Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Custom Flipbook Stylesheet -->
-    <link rel="stylesheet" href="css/flipbook.css" />
-  </head>
-  <body>
-    <!-- Top Header Banner -->
-    <header class="page-hero-banner">
-      <h1 class="page-hero-title">Annual Reports &amp; Publications</h1>
-      <p class="page-hero-desc">Interactive 3D Digital Flipbook</p>
-    </header>
-
-    <!-- Flipbook Main Stage -->
-    <main class="flipbook-wrapper">
-      <!-- Publication Dropdown Selector -->
-      <div class="controls">
-        <label for="pdf-selector"><strong>Select Publication:</strong></label>
-        <select id="pdf-selector">
-          <option value="pdfs/Annual Report 2014-15-OYSTER.pdf">OYSTER Annual Report 2014-15</option>
-          <option value="pdfs/Annual Report 2015-16-OYSTER.pdf">OYSTER Annual Report 2015-16</option>
-          <option value="pdfs/Annual Report 2016-17-OYSTER.pdf">OYSTER Annual Report 2016-17</option>
-          <option value="pdfs/Annual Report 2017-18-OYSTER.pdf">OYSTER Annual Report 2017-18</option>
-          <option value="pdfs/Annual Report 2018-19-OYSTER.pdf">OYSTER Annual Report 2018-19</option>
-          <option value="pdfs/Annual Report 2019-20-OYSTER.pdf">OYSTER Annual Report 2019-20</option>
-          <option value="pdfs/Annual Report 2020-21.pdf">OYSTER Annual Report 2020-21</option>
-          <option value="pdfs/Annual Report 2021-22.pdf">OYSTER Annual Report 2021-22</option>
-          <option value="pdfs/Annual Report 2022-23.pdf">OYSTER Annual Report 2022-23</option>
-          <option value="pdfs/ANNUAL REPORT 2023-24.pdf" selected>OYSTER Annual Report 2023-24</option>
-        </select>
-      </div>
-
-      <!-- Loading Spinner & Percentage Progress -->
-      <div id="loading-indicator">
-        <div class="spinner"></div>
-        <span>Rendering high-resolution pages... (<span id="loading-progress">0%</span>)</span>
-      </div>
-
-      <!-- Zoom & Pan Controls Pill -->
-      <div class="zoom-controls" id="zoom-controls">
-        <button id="btn-zoom-out" title="Zoom Out"><i class="bi bi-zoom-out"></i></button>
-        <span class="zoom-level-indicator" id="zoom-level-text">100%</span>
-        <button id="btn-zoom-in" title="Zoom In"><i class="bi bi-zoom-in"></i></button>
-        <button id="btn-zoom-reset" title="Reset Zoom"><i class="bi bi-arrow-counterclockwise"></i></button>
-      </div>
-
-      <!-- 3D Book Container -->
-      <div id="book-container">
-        <!-- Floating Navigation Chevron Buttons -->
-        <button id="float-prev-btn" class="flip-arrow-btn btn-prev-arrow" title="Previous Page" aria-label="Previous Page">
-          <i class="bi bi-chevron-left"></i>
-        </button>
-        <button id="float-next-btn" class="flip-arrow-btn btn-next-arrow" title="Next Page" aria-label="Next Page">
-          <i class="bi bi-chevron-right"></i>
-        </button>
-
-        <div id="book-centering-wrapper">
-          <div class="flip-book" id="book"></div>
-        </div>
-      </div>
-
-      <!-- Bottom Navigation Bar -->
-      <nav class="navigation" id="flipbook-controls" aria-label="Book Navigation">
-        <button id="btn-first" title="First Page"><i class="bi bi-chevron-bar-left"></i></button>
-        <button id="prev-btn" title="Previous Page"><i class="bi bi-chevron-left"></i></button>
-
-        <div class="page-counter">
-          <input type="number" id="page-input" value="1" min="1" aria-label="Current Page Number" />
-          <span> / <span id="total-pages">1</span></span>
-        </div>
-
-        <button id="next-btn" title="Next Page"><i class="bi bi-chevron-right"></i></button>
-        <button id="btn-last" title="Last Page"><i class="bi bi-chevron-bar-right"></i></button>
-      </nav>
-    </main>
-
-    <!-- Mozilla PDF.js Library (High-DPI in-browser PDF decoder) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-
-    <!-- StPageFlip Library (Realistic 3D page curl physics & soundless turns) -->
-    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
-
-    <!-- Flipbook Controller -->
-    <script src="js/flipbook.js"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annual Reports & Newsletters • Interactive 3D Flipbook</title>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts for Antique Book Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Flipbook Stylesheet -->
+    <link rel="stylesheet" href="css/flipbook.css" />
+  </head>
+  <body>
+    <!-- Top Header Banner -->
+    <header class="page-hero-banner">
+      <h1 class="page-hero-title">Annual Reports &amp; Publications</h1>
+      <p class="page-hero-desc">Interactive 3D Digital Flipbook</p>
+    </header>
+
+    <!-- Flipbook Main Stage -->
+    <main class="flipbook-wrapper">
+      <!-- Publication Dropdown Selector -->
+      <div class="controls">
+        <label for="pdf-selector"><strong>Select Publication:</strong></label>
+        <select id="pdf-selector">
+          <option value="pdfs/Annual Report 2014-15-OYSTER.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2014-15</option>
+          <option value="pdfs/Annual Report 2015-16-OYSTER.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2015-16</option>
+          <option value="pdfs/Annual Report 2016-17-OYSTER.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2016-17</option>
+          <option value="pdfs/Annual Report 2017-18-OYSTER.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2017-18</option>
+          <option value="pdfs/Annual Report 2018-19-OYSTER.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2018-19</option>
+          <option value="pdfs/Annual Report 2019-20-OYSTER.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2019-20</option>
+          <option value="pdfs/Annual Report 2020-21.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2020-21</option>
+          <option value="pdfs/Annual Report 2021-22.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2021-22</option>
+          <option value="pdfs/Annual Report 2022-23.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="">OYSTER Annual Report 2022-23</option>
+          <option value="pdfs/ANNUAL REPORT 2023-24.pdf" data-cover="assets/oyster_annual_report_cover.jpg" data-back="" selected>OYSTER Annual Report 2023-24</option>
+        </select>
+      </div>
+
+      <!-- Loading Spinner & Percentage Progress -->
+      <div id="loading-indicator">
+        <div class="spinner"></div>
+        <span>Rendering high-resolution pages... (<span id="loading-progress">0%</span>)</span>
+      </div>
+
+      <!-- Zoom & Pan Controls Pill -->
+      <div class="zoom-controls" id="zoom-controls">
+        <button id="btn-zoom-out" title="Zoom Out"><i class="bi bi-zoom-out"></i></button>
+        <span class="zoom-level-indicator" id="zoom-level-text">100%</span>
+        <button id="btn-zoom-in" title="Zoom In"><i class="bi bi-zoom-in"></i></button>
+        <button id="btn-zoom-reset" title="Reset Zoom"><i class="bi bi-arrow-counterclockwise"></i></button>
+      </div>
+
+      <!-- 3D Book Container -->
+      <div id="book-container">
+        <!-- Floating Navigation Chevron Buttons -->
+        <button id="float-prev-btn" class="flip-arrow-btn btn-prev-arrow" title="Previous Page" aria-label="Previous Page">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button id="float-next-btn" class="flip-arrow-btn btn-next-arrow" title="Next Page" aria-label="Next Page">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+
+        <div id="book-centering-wrapper">
+          <div class="flip-book" id="book"></div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation Bar -->
+      <nav class="navigation" id="flipbook-controls" aria-label="Book Navigation">
+        <button id="btn-first" title="First Page"><i class="bi bi-chevron-bar-left"></i></button>
+        <button id="prev-btn" title="Previous Page"><i class="bi bi-chevron-left"></i></button>
+
+        <div class="page-counter">
+          <input type="number" id="page-input" value="1" min="1" aria-label="Current Page Number" />
+          <span> / <span id="total-pages">1</span></span>
+        </div>
+
+        <button id="next-btn" title="Next Page"><i class="bi bi-chevron-right"></i></button>
+        <button id="btn-last" title="Last Page"><i class="bi bi-chevron-bar-right"></i></button>
+      </nav>
+    </main>
+
+    <!-- Mozilla PDF.js Library (High-DPI in-browser PDF decoder) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <!-- StPageFlip Library (Realistic 3D page curl physics & soundless turns) -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+
+    <!-- Flipbook Controller -->
+    <script src="js/flipbook.js"></script>
+  </body>
+</html>
