@@ -125,30 +125,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const pagesArray = [];
       const selectedText = selector.options[selector.selectedIndex].text;
 
-      // 1. FRONT COVER (Gilded Antique Hardcover)
+      // 1. FRONT COVER (Authentic OYSTER Alumni Association Cover)
       const frontCover = document.createElement('div');
-      frontCover.className = 'page hardcover-aged front-cover';
+      frontCover.className = 'page hardcover-aged front-cover photo-hardcover';
       frontCover.dataset.density = 'hard';
       frontCover.innerHTML = `
-        <div class="cover-antique-frame"></div>
-        <div class="cover-content">
-          <div class="antique-title-sub">Rajagiri College of Social Sciences</div>
-          <div>
-            <div class="antique-medallion">
-              <img src="assets/logorajagiri.png" alt="Emblem" />
-            </div>
-            <h1 class="antique-title-main">OYSTER</h1>
-            <h2 class="antique-title-org">― Alumni Association ―</h2>
-            <div class="antique-plaque">
-              <h3>${selectedText}</h3>
-            </div>
-          </div>
-          <div>
-            <div style="color: #dfba53; font-size: 1rem; margin-bottom: 4px;">❦ ❖ ❦</div>
-            <div class="antique-motto">"Learn • Serve • Excel"</div>
-            <div class="antique-accreditation">Autonomous • NAAC A++ (CGPA 3.83)</div>
-          </div>
-        </div>
+        <img src="assets/oyster_annual_report_cover.jpg" class="cover-photo-img" alt="OYSTER Annual Report Cover" />
+        <div class="cover-spine-crease"></div>
+        <div class="cover-outer-shadow"></div>
       `;
       pagesArray.push(frontCover);
 

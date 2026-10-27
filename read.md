@@ -1,23 +1,24 @@
-# 📖 3D Realistic Annual Reports Flipbook & Reader
+﻿# ðŸ“– 3D Realistic Annual Reports Flipbook & Reader
 
 > **An immersive, high-performance in-browser 3D Digital Flipbook reader** that renders standard PDF publications into authentic, tactile physical books with **realistic page curl physics**, **aged hardcover bindings**, **gold-embossed typography**, **scorch-marked parchment edges**, **smooth zoom & pan**, and an **instant multi-publication switcher**.
 
 ---
 
-## 🌟 Executive Overview
+## ðŸŒŸ Executive Overview
 
 Traditional web PDF viewers offer flat, vertical scrolling that feels sterile and uninspired. This project transforms reading institutional archives and annual reports into a rich, physical experience:
 
 - **100% Pure Web Standards**: Zero React, zero Vite/Webpack, zero build steps, and zero backend required. Runs directly in any modern browser using pure HTML5, CSS3, and Vanilla JavaScript.
 - **Physics-Driven 3D Page Turning**: Real-time page deformation, corner dragging, dynamic lighting, and realistic drop shadows powered by **StPageFlip**.
+- **Authentic OYSTER Alumni Cover**: Full-bleed official OYSTER cover with embossed leather spine, realistic spine crease highlights, and 3D depth shadows.
 - **Antique Gilded Hardcover Binding**: Custom procedural #1f4d59 aged leather texture, dual-layer gilded borders, vintage corner filigrees, and an antique embossed crest medallion.
 - **Procedural Scorch & Burnt Edge Patterns**: 4 randomized, natural singed paper edge patterns distributed across pages to recreate an authentic historic volume without obscuring text or photos.
-- **High-DPI Retina PDF Decoding**: Powered by Mozilla **PDF.js**, scaling canvases up to 1.8× `devicePixelRatio` for razor-sharp clarity on 1080p, Retina, and 4K displays.
-- **Pre-Loaded Archive of 10 Publications**: Out-of-the-box support for 10 complete Rajagiri College of Social Sciences (OYSTER Alumni Association) Annual Reports spanning a decade (2014–2024).
+- **High-DPI Retina PDF Decoding**: Powered by Mozilla **PDF.js**, scaling canvases up to 1.8Ã— `devicePixelRatio` for razor-sharp clarity on 1080p, Retina, and 4K displays.
+- **Pre-Loaded Archive of 10 Publications**: Out-of-the-box support for 10 complete Rajagiri College of Social Sciences (OYSTER Alumni Association) Annual Reports spanning a decade (2014â€“2024).
 
 ---
 
-## 🛠️ Technology Stack & Dependencies
+## ðŸ› ï¸ Technology Stack & Dependencies
 
 | Component | Library / Spec | Version / CDN | Purpose |
 | :--- | :--- | :--- | :--- |
@@ -30,17 +31,17 @@ Traditional web PDF viewers offer flat, vertical scrolling that feels sterile an
 
 ---
 
-## 🎨 Visual Aesthetics & Design System
+## ðŸŽ¨ Visual Aesthetics & Design System
 
 ### 1. Aged Hardcover Binding (`.hardcover-aged`)
 - **Color & Texture**: Deep aged patina radial gradient (`#245866` to `#061619`) with distressed micro-texture overlays simulating vintage book leather.
-- **Gilded Frame**: Double 2px gold border (`#dfba53`) with inset framing and decorative Unicode four-leaf corner filigrees (`❖`).
+- **Gilded Frame**: Double 2px gold border (`#dfba53`) with inset framing and decorative Unicode four-leaf corner filigrees (`â–`).
 - **Antique Medallion**: Radial cream seal with gold double-ring border framing the official institutional crest.
-- **Foil Stamping**: Multi-stop linear gradient (`#fff3c9` → `#e2be58` → `#a67918`) applied with `-webkit-background-clip: text` to simulate authentic hot-stamped gold foil.
+- **Foil Stamping**: Multi-stop linear gradient (`#fff3c9` â†’ `#e2be58` â†’ `#a67918`) applied with `-webkit-background-clip: text` to simulate authentic hot-stamped gold foil.
 
 ### 2. Archival Flyleaf Frontispiece (`.inside-front`)
-- Warm parchment paper texture with an inner ruled border and formal Latin motto: *"Learn • Serve • Excel"*.
-- Displays institutional accreditation (*Autonomous • NAAC A++ Grade • NIRF Top Ranked*) and historical context facing Page 1.
+- Warm parchment paper texture with an inner ruled border and formal Latin motto: *"Learn â€¢ Serve â€¢ Excel"*.
+- Displays institutional accreditation (*Autonomous â€¢ NAAC A++ Grade â€¢ NIRF Top Ranked*) and historical context facing Page 1.
 
 ### 3. Procedural Burnt-Edge & Scorch Patterns
 To give the publication an authentic physical book feel without obscuring any content, four localized radial gradient patterns are applied randomly:
@@ -57,26 +58,26 @@ To give the publication an authentic physical book feel without obscuring any co
 
 ---
 
-## 📚 Complete Publications Catalog
+## ðŸ“š Complete Publications Catalog
 
 The flipbook is pre-configured with 10 official Rajagiri College of Social Sciences (RCSS) OYSTER Annual Reports:
 
 | # | Publication Name | File Path | Era / Academic Year |
 | :---: | :--- | :--- | :---: |
-| 1 | **OYSTER Annual Report 2014-15** | `pdfs/Annual Report 2014-15-OYSTER.pdf` | 2014 – 2015 |
-| 2 | **OYSTER Annual Report 2015-16** | `pdfs/Annual Report 2015-16-OYSTER.pdf` | 2015 – 2016 |
-| 3 | **OYSTER Annual Report 2016-17** | `pdfs/Annual Report 2016-17-OYSTER.pdf` | 2016 – 2017 |
-| 4 | **OYSTER Annual Report 2017-18** | `pdfs/Annual Report 2017-18-OYSTER.pdf` | 2017 – 2018 |
-| 5 | **OYSTER Annual Report 2018-19** | `pdfs/Annual Report 2018-19-OYSTER.pdf` | 2018 – 2019 |
-| 6 | **OYSTER Annual Report 2019-20** | `pdfs/Annual Report 2019-20-OYSTER.pdf` | 2019 – 2020 |
-| 7 | **OYSTER Annual Report 2020-21** | `pdfs/Annual Report 2020-21.pdf` | 2020 – 2021 |
-| 8 | **OYSTER Annual Report 2021-22** | `pdfs/Annual Report 2021-22.pdf` | 2021 – 2022 |
-| 9 | **OYSTER Annual Report 2022-23** | `pdfs/Annual Report 2022-23.pdf` | 2022 – 2023 |
-| 10 | **OYSTER Annual Report 2023-24** *(Selected)* | `pdfs/ANNUAL REPORT 2023-24.pdf` | 2023 – 2024 |
+| 1 | **OYSTER Annual Report 2014-15** | `pdfs/Annual Report 2014-15-OYSTER.pdf` | 2014 â€“ 2015 |
+| 2 | **OYSTER Annual Report 2015-16** | `pdfs/Annual Report 2015-16-OYSTER.pdf` | 2015 â€“ 2016 |
+| 3 | **OYSTER Annual Report 2016-17** | `pdfs/Annual Report 2016-17-OYSTER.pdf` | 2016 â€“ 2017 |
+| 4 | **OYSTER Annual Report 2017-18** | `pdfs/Annual Report 2017-18-OYSTER.pdf` | 2017 â€“ 2018 |
+| 5 | **OYSTER Annual Report 2018-19** | `pdfs/Annual Report 2018-19-OYSTER.pdf` | 2018 â€“ 2019 |
+| 6 | **OYSTER Annual Report 2019-20** | `pdfs/Annual Report 2019-20-OYSTER.pdf` | 2019 â€“ 2020 |
+| 7 | **OYSTER Annual Report 2020-21** | `pdfs/Annual Report 2020-21.pdf` | 2020 â€“ 2021 |
+| 8 | **OYSTER Annual Report 2021-22** | `pdfs/Annual Report 2021-22.pdf` | 2021 â€“ 2022 |
+| 9 | **OYSTER Annual Report 2022-23** | `pdfs/Annual Report 2022-23.pdf` | 2022 â€“ 2023 |
+| 10 | **OYSTER Annual Report 2023-24** *(Selected)* | `pdfs/ANNUAL REPORT 2023-24.pdf` | 2023 â€“ 2024 |
 
 ---
 
-## ⚡ Interactive Controls & Features
+## âš¡ Interactive Controls & Features
 
 ### 1. Document Switcher Dropdown
 - Select any of the 10 publications from the top dropdown.
@@ -96,17 +97,17 @@ The flipbook is pre-configured with 10 official Rajagiri College of Social Scien
 - **Floating Chevrons**: Large circular floating chevron buttons (`<` and `>`) pinned to the left and right of the book.
 - **Bottom Navigation Dock**: First Page (`|<`), Previous (`<`), Next (`>`), and Last Page (`>|`).
 - **Direct Page Jump**: Editable numeric input field (`[ 1 ] / 14`) allowing readers to type any page number and jump instantly.
-- **Keyboard Shortcuts**: Left Arrow (`←`) flips backward, Right Arrow (`→`) flips forward.
+- **Keyboard Shortcuts**: Left Arrow (`â†`) flips backward, Right Arrow (`â†’`) flips forward.
 
 ---
 
-## 🚀 Quick Start Guide
+## ðŸš€ Quick Start Guide
 
 > [!IMPORTANT]
 > **Why is a local web server required?**  
 > Modern web browsers enforce CORS (Cross-Origin Resource Sharing) security policies that block JavaScript from reading binary PDF files over the `file:///` protocol. Running a local HTTP server resolves this immediately.
 
-### Method 1: Using Python (Recommended — Built into Windows, macOS & Linux)
+### Method 1: Using Python (Recommended â€” Built into Windows, macOS & Linux)
 1. Open PowerShell or Terminal in this project directory:
    ```powershell
    cd "c:\Users\dkxga\web Develop\scroll"
@@ -136,37 +137,37 @@ The flipbook is pre-configured with 10 official Rajagiri College of Social Scien
 
 ---
 
-## 📂 File Structure & Repository Map
+## ðŸ“‚ File Structure & Repository Map
 
 ```
 scroll/ (branch: pdf)
-├── index.html                   # Pure standalone HTML structure & CDN references
-├── README.md                    # Comprehensive technical documentation & user guide
-├── read.md                      # Alias documentation copy
-├── package.json                 # Optional npm scripts (`npm start`)
-├── .gitignore                   # Standard web ignore rules (node_modules, caches)
-├── css/
-│   └── flipbook.css             # Complete 3D book styling, leather textures, filigrees & burn patterns
-├── js/
-│   └── flipbook.js              # Complete PDF.js + StPageFlip controller logic, zoom & pan engine
-├── assets/
-│   └── logorajagiri.png         # High-resolution Rajagiri crest medallion image
-└── pdfs/                        # 10 complete high-resolution annual report PDF files
-    ├── Annual Report 2014-15-OYSTER.pdf
-    ├── Annual Report 2015-16-OYSTER.pdf
-    ├── Annual Report 2016-17-OYSTER.pdf
-    ├── Annual Report 2017-18-OYSTER.pdf
-    ├── Annual Report 2018-19-OYSTER.pdf
-    ├── Annual Report 2019-20-OYSTER.pdf
-    ├── Annual Report 2020-21.pdf
-    ├── Annual Report 2021-22.pdf
-    ├── Annual Report 2022-23.pdf
-    └── ANNUAL REPORT 2023-24.pdf
+â”œâ”€â”€ index.html                   # Pure standalone HTML structure & CDN references
+â”œâ”€â”€ README.md                    # Comprehensive technical documentation & user guide
+â”œâ”€â”€ read.md                      # Alias documentation copy
+â”œâ”€â”€ package.json                 # Optional npm scripts (`npm start`)
+â”œâ”€â”€ .gitignore                   # Standard web ignore rules (node_modules, caches)
+â”œâ”€â”€ css/
+â”‚   â””â”€â”€ flipbook.css             # Complete 3D book styling, leather textures, filigrees & burn patterns
+â”œâ”€â”€ js/
+â”‚   â””â”€â”€ flipbook.js              # Complete PDF.js + StPageFlip controller logic, zoom & pan engine
+â”œâ”€â”€ assets/
+â”‚   â””â”€â”€ logorajagiri.png         # High-resolution Rajagiri crest medallion image
+â””â”€â”€ pdfs/                        # 10 complete high-resolution annual report PDF files
+    â”œâ”€â”€ Annual Report 2014-15-OYSTER.pdf
+    â”œâ”€â”€ Annual Report 2015-16-OYSTER.pdf
+    â”œâ”€â”€ Annual Report 2016-17-OYSTER.pdf
+    â”œâ”€â”€ Annual Report 2017-18-OYSTER.pdf
+    â”œâ”€â”€ Annual Report 2018-19-OYSTER.pdf
+    â”œâ”€â”€ Annual Report 2019-20-OYSTER.pdf
+    â”œâ”€â”€ Annual Report 2020-21.pdf
+    â”œâ”€â”€ Annual Report 2021-22.pdf
+    â”œâ”€â”€ Annual Report 2022-23.pdf
+    â””â”€â”€ ANNUAL REPORT 2023-24.pdf
 ```
 
 ---
 
-## ➕ How to Add Your Own Publications
+## âž• How to Add Your Own Publications
 
 Adding new PDF reports or booklets takes under 60 seconds:
 
@@ -183,13 +184,13 @@ Adding new PDF reports or booklets takes under 60 seconds:
 
 ---
 
-## 🔒 Security & Privacy
+## ðŸ”’ Security & Privacy
 
 - **100% Client-Side Processing**: All PDF decoding and rasterization happens entirely inside the user's browser memory. No documents, pages, or user metrics are uploaded to external servers.
 - **Zero Tracking / Zero Telemetry**: Clean, privacy-first implementation without third-party analytics.
 
 ---
 
-## 📜 License
+## ðŸ“œ License
 
 Created for **Rajagiri College of Social Sciences (RCSS)** & the **OYSTER Alumni Association**. Built with open-source technologies under MIT / Apache licenses.
